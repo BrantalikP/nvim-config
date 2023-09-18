@@ -2,17 +2,29 @@ local lsp = require("lsp-zero")
 
 lsp.preset("recommended")
 
-lsp.ensure_installed({
-	'tsserver',
-	'eslint',
-	'rust_analyzer',
-	'sourcekit',
-	'kotlin_language_server',
-})
+-- lsp.ensure_installed({
+-- 	'tsserver',
+-- 	'eslint',
+-- 	'rust_analyzer',
+-- 	'sourcekit',
+-- 	'kotlin_language_server',
+-- })
 
 -- Fix Undefined global 'vim'
 lsp.nvim_workspace()
 
+
+require("mason-lspconfig").setup {
+	ensure_installed = {
+		'tsserver',
+		'eslint',
+		'kotlin_language_server',
+		"lua_ls",
+		"rust_analyzer",
+		'csharp_ls',
+		'yamlls'
+	},
+}
 
 local cmp = require('cmp')
 local cmp_select = { behavior = cmp.SelectBehavior.Select }
