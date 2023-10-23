@@ -47,6 +47,9 @@ return packer.startup(function(use)
 
 	use "windwp/nvim-autopairs" -- Autopairs, automatticallly close () [] {}
   use "windwp/nvim-ts-autotag" -- Autotags, <></>
+	use "numToStr/Comment.nvim"
+	use	"JoosepAlviste/nvim-ts-context-commentstring"
+	use "github/copilot.vim"
 
 	-- Colorschemes
   use "lunarvim/darkplus.nvim"
