@@ -76,6 +76,10 @@ keymap("n", "<leader>f", "<cmd>lua require'telescope.builtin'.find_files(require
 keymap("n", "<c-t>", "<cmd>Telescope live_grep theme=ivy<cr>", opts)
 -- keymap('n', '<leader>e', "<cmd>NvimTreeToggle<cr>", opts)
 
+
+-- Nvimtree
+keymap('n', '<leader>e', "<cmd>NvimTreeToggle<cr>", opts)
+
 -- Terminal --
 -- Better terminal navigation
 -- keymap("t", "<C-h>", "<C-\\><C-N><C-w>h", term_opts)
