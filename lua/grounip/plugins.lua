@@ -50,8 +50,13 @@ return packer.startup(function(use)
 	use "numToStr/Comment.nvim"
 	use	"JoosepAlviste/nvim-ts-context-commentstring"
 	use "github/copilot.vim"
+
 	use "nvim-tree/nvim-tree.lua" -- Explorer
 	use 'nvim-tree/nvim-web-devicons'
+
+	-- Bufferline
+	use "akinsho/bufferline.nvim"
+	use  "moll/vim-bbye"
 
 	-- Colorschemes
   use "lunarvim/darkplus.nvim"
