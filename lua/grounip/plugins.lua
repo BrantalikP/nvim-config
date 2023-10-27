@@ -53,6 +53,7 @@ return packer.startup(function(use)
 	use "nvim-lualine/lualine.nvim" -- Statusline
 	use "folke/which-key.nvim"
 	use  "ahmedkhalf/project.nvim"
+	use "lewis6991/impatient.nvim"
 
 	use "nvim-tree/nvim-tree.lua" -- Explorer
 	use 'nvim-tree/nvim-web-devicons'
