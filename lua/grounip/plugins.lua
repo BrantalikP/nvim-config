@@ -52,6 +52,7 @@ return packer.startup(function(use)
 	use "github/copilot.vim"
 	use "nvim-lualine/lualine.nvim" -- Statusline
 	use "folke/which-key.nvim"
+	use  "ahmedkhalf/project.nvim"
 
 	use "nvim-tree/nvim-tree.lua" -- Explorer
 	use 'nvim-tree/nvim-web-devicons'
