@@ -50,6 +50,8 @@ return packer.startup(function(use)
 	use "numToStr/Comment.nvim"
 	use "JoosepAlviste/nvim-ts-context-commentstring"
 	use "github/copilot.vim"
+	use "nvim-lualine/lualine.nvim" -- Statusline
+	use "folke/which-key.nvim"
 
 	use "nvim-tree/nvim-tree.lua" -- Explorer
 	use 'nvim-tree/nvim-web-devicons'
