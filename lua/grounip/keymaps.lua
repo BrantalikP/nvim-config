@@ -38,6 +38,9 @@ keymap("n", "<S-h>", ":bprevious<CR>", opts)
 keymap("n", "<A-j>", ":m .+1<CR>==", opts)
 keymap("n", "<A-k>", ":m .-2<CR>==", opts)
 
+-- duplicate
+keymap("x", "<A-d>", ":t '>+1<CR>gv=gv", opts)
+
 -- Insert --
 -- Press jk fast to exit insert mode
 -- keymap("i", "jk", "<ESC>", opts)
@@ -72,7 +75,9 @@ keymap('n', 'sv', ':vsplit<Return><C-w>w', opts)
 
 
 -- Telescope
-keymap("n", "<leader>f", "<cmd>lua require'telescope.builtin'.find_files(require('telescope.themes').get_dropdown({ previewer = false }))<cr>", opts)
+keymap("n", "<leader>f",
+	"<cmd>lua require'telescope.builtin'.find_files(require('telescope.themes').get_dropdown({ previewer = false }))<cr>",
+	opts)
 keymap("n", "<c-t>", "<cmd>Telescope live_grep theme=ivy<cr>", opts)
 -- keymap('n', '<leader>e', "<cmd>NvimTreeToggle<cr>", opts)
 
