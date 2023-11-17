@@ -55,6 +55,7 @@ return packer.startup(function(use)
 	use "ahmedkhalf/project.nvim"
 	use "lewis6991/impatient.nvim"
 	use { "christoomey/vim-tmux-navigator", lazy = false }
+	use { "mg979/vim-visual-multi", branch = "master" }
 
 	use {
 		'kkoomen/vim-doge',
