@@ -74,6 +74,12 @@ return packer.startup(function(use)
 
 	-- Colorschemes
 	use "lunarvim/darkplus.nvim"
+	use {
+		"craftzdog/solarized-osaka.nvim",
+		lazy = false,
+		priority = 1000,
+		opts = {},
+	}
 
 	-- Cmp
 	use "hrsh7th/nvim-cmp"        -- The completion plugin
