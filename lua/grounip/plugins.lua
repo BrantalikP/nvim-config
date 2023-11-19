@@ -56,6 +56,12 @@ return packer.startup(function(use)
 	use "lewis6991/impatient.nvim"
 	use { "christoomey/vim-tmux-navigator", lazy = false }
 	use { "mg979/vim-visual-multi", branch = "master" }
+	use {
+		"smjonas/inc-rename.nvim",
+		config = function()
+			require("inc_rename").setup()
+		end,
+	}
 
 	use {
 		'kkoomen/vim-doge',

@@ -73,6 +73,9 @@ keymap('n', '<C-a>', 'gg<S-v>G', opts)
 keymap('n', 'ss', ':split<Return><C-w>w', opts)
 keymap('n', 'sv', ':vsplit<Return><C-w>w', opts)
 
+-- Rename
+keymap("n", "<leader>rn", ":IncRename ")
+
 
 -- Telescope
 keymap("n", "<leader>f",
