@@ -71,6 +71,9 @@ return packer.startup(function(use)
 	use "nvim-tree/nvim-tree.lua" -- Explorer
 	use 'nvim-tree/nvim-web-devicons'
 
+	-- color highlight
+	use 'norcalli/nvim-colorizer.lua'
+
 	-- Bufferline
 	use "akinsho/bufferline.nvim"
 	use "moll/vim-bbye"
