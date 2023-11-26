@@ -7,7 +7,7 @@ local servers = {
 	-- "bashls",
 	"jsonls",
 	"yamlls",
-}
+	"tailwindcss" }
 
 local settings = {
 	ui = {

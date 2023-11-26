@@ -9,6 +9,7 @@ local keymap = vim.keymap.set
 keymap("", "<Space>", "<Nop>", opts)
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
+vim.g.copilot_no_tab_map = true
 
 -- Modes
 --   normal_mode = "n",
@@ -82,7 +83,7 @@ keymap("n", "<leader>f",
 	"<cmd>lua require'telescope.builtin'.find_files(require('telescope.themes').get_dropdown({ previewer = false }))<cr>",
 	opts)
 keymap("n", "<c-t>", "<cmd>Telescope live_grep theme=ivy<cr>", opts)
--- keymap('n', '<leader>e', "<cmd>NvimTreeToggle<cr>", opts)
+-- keymap:('n', '<leader>e', "<cmd>NvimTreeToggle<cr>", opts)
 
 -- Terminal --
 -- Better terminal navigation
